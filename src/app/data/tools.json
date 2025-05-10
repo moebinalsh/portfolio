@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "Example Security Tool 1",
+    "description": "A conceptual tool for demonstrating the tools section. This tool helps in analyzing network traffic for anomalies.",
+    "link": "#",
+    "sourceCode": "https://github.com/moebinalsh/portfolio/tree/main/tools/example-tool-1",
+    "tags": ["Network Security", "Python", "Packet Analysis"]
+  },
+  {
+    "id": "2",
+    "name": "Example Security Tool 2",
+    "description": "Another conceptual tool. This one focuses on vulnerability scanning for web applications.",
+    "link": "#",
+    "sourceCode": "https://github.com/moebinalsh/portfolio/tree/main/tools/example-tool-2",
+    "tags": ["Web Security", "Vulnerability Scanning", "JavaScript"]
+  }
+]

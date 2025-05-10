@@ -1,0 +1,10 @@
+[
+  {
+    "id": "1",
+    "title": "Automated Secrets Detection in CI/CD Pipelines",
+    "date": "2024-05-10",
+    "abstract": "This paper presents an advanced solution that integrates Gitleaks with a user-friendly interface to detect exposed secrets, identify responsible committers, and analyze repository access permissions. The system streamlines compliance workflows by enabling structured data export for remediation.",
+    "filePath": "research-content/automated_secrets_detection.md",
+    "tags": ["Cybersecurity", "DevSecOps", "Secrets Management", "CI/CD"]
+  }
+]
