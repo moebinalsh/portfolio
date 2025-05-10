@@ -36,13 +36,15 @@ async function getResearchData(id: string) {
     const contentHtml = processedContent.toString();
 
     return {
+      // id, // Removed as it's part of ...researchItem and caused duplication
       contentHtml,
-      ...researchItem,
+      ...researchItem, // Spread the rest of the research item data (title, date, etc.)
       frontmatter: data
     };
   } catch (error) {
     console.error(`Error reading or processing research file ${fullPath}:`, error);
     return {
+        // id, // Removed as it's part of ...researchItem and caused duplication
         contentHtml: "<p>Error loading research content. Please check the file path and format.</p>",
         ...researchItem,
         frontmatter: {}

@@ -1,6 +1,6 @@
+
 'use server'
 // import { getCloudflareContext } from '@opennextjs/cloudflare'
-
 import { cookies } from 'next/headers'
 
 /**
@@ -17,7 +17,7 @@ import { cookies } from 'next/headers'
  */
 export async function incrementAndLog() {
   // const cf = await getCloudflareContext()
-  // const headersList = headers()
+  // const headersList = headers() // headers was removed as it was unused
   const cookieStore = await cookies()
 
   // Get current count from cookie or start at 0
@@ -57,8 +57,8 @@ export async function incrementAndLog() {
 
   // await cf.env.DB.prepare('INSERT INTO access_logs (ip, path, accessed_at) VALUES (?, ?, datetime())')
   //   .bind(
-  //     headersList.get('x-forwarded-for') || headersList.get('x-real-ip') || 'unknown',
-  //     headersList.get('x-forwarded-host') || '/'
+  //     headersList.get('x-forwarded-for') || headersList.get('x-real-ip') || 'unknown', // This would cause an error if headersList is commented out
+  //     headersList.get('x-forwarded-host') || '/' // This would cause an error if headersList is commented out
   //   )
   //   .run()
 
@@ -102,3 +102,4 @@ export async function getStats() {
     recentAccess: recentAccessList
   }
 }
+
